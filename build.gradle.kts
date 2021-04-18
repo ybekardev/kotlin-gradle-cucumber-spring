@@ -79,6 +79,7 @@ dependencies {
 
 tasks.test {
 	//useJUnitPlatform()
+	systemProperty("cucumber.options", System.getProperty("cucumber.options"))
 	useJUnitPlatform {
 		includeTags("demo")
 		excludeTags("slow")
@@ -95,4 +96,5 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+	systemProperty("cucumber.options", System.getProperty("cucumber.options"))
 }

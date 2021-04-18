@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions
 import org.junit.runner.RunWith
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
-@RunWith(Cucumber::class)
+/*@RunWith(Cucumber::class)
 @CucumberOptions(
         features = ["src/main/resources/features"],
         glue=["com/virginpulse/claims_automation/stepdefinitions/StepDefinitions.kt"],
@@ -20,11 +20,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
             "json:build/reports/tests/test/cucumber.json",
             "junit:build/reports/tests/test/cucumber.xml"
         ]
-)
+)*/
 //@SpringBootTest
 class ClaimsAutomationApplicationTests {
 
-    @Test
+/*    @Test
     fun contextLoads() {
         println("Running the tests")
     }
@@ -35,6 +35,6 @@ class ClaimsAutomationApplicationTests {
         println("$add + 1 = 4")
         var result = add + 1
         assert(result == 4)
-    }
+    }*/
 
 }
